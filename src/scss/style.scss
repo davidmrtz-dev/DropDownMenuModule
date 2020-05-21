@@ -19,7 +19,7 @@ body {
     align-items: center;
     height: 50px;
     width: 100%;
-    background-color: rgba(0, 179, 255, 0.66);
+    background-color: rgba(57, 127, 157, 0.66);
     .icon-box {
       height: 100%;
       width: auto;
@@ -33,6 +33,20 @@ body {
         h3 {
           font: small-caps 20px/30px Georgia, serif;
           padding: 0 10px;
+        }
+      }
+      ul {
+        list-style: none;
+        background-color: rgb(110, 178, 203);
+        border: 0;
+        text-align: center;
+        button {
+          border: 1px solid rgba(128, 128, 128, 0.536);
+          padding: 10px 0;
+          width: 100%;
+          h3 {
+            font: small-caps 20px/30px Georgia, serif;
+          }
         }
       }
     }
