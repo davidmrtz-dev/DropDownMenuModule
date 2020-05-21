@@ -19,12 +19,21 @@ body {
     align-items: center;
     height: 50px;
     width: 100%;
-    background-color: aqua;
+    background-color: rgba(0, 179, 255, 0.66);
     .icon-box {
-      width: 100px;
+      height: 100%;
+      width: auto;
       padding-left: 20px;
-      svg{
-        padding: 0 10px;
+      button {
+        height: 100%;
+        background-color: transparent;
+        border: 0;
+        padding: 0 50px;
+        cursor: pointer;
+        h3 {
+          font: small-caps 20px/30px Georgia, serif;
+          padding: 0 10px;
+        }
       }
     }
   }
