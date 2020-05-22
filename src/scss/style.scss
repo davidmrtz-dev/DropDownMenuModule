@@ -29,15 +29,19 @@ body {
         background-color: transparent;
         border: 0;
         padding: 0 50px;
+        outline: none;
         cursor: pointer;
         h3 {
           font: small-caps 20px/30px Georgia, serif;
           padding: 0 10px;
         }
       }
+      button:hover {
+        background-color: rgba(95, 169, 196, 0.817);
+      }
       ul {
         list-style: none;
-        background-color: rgb(110, 178, 203);
+        background-color: rgba(57, 127, 157, 0.66);
         border: 0;
         text-align: center;
         button {
@@ -47,6 +51,9 @@ body {
           h3 {
             font: small-caps 20px/30px Georgia, serif;
           }
+        }
+        button:hover {
+          background-color: rgba(95, 169, 196, 0.817);
         }
       }
     }
