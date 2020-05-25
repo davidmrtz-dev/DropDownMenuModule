@@ -2,7 +2,7 @@
 
 > This is  project based on a basic module to easly implement drop-down menus.
 
-![screenshot](./pres.gif)
+![screenshot](./ok.gif)
 
 ## Usage
 
