@@ -1,8 +1,9 @@
 import './scss/style.scss';
 import Menu from './menu';
 
-const menu = Menu;
+const menuObj = Menu;
 
 const start = (() => {
-  console.log('running...');
+  menuObj.scanForMenu();
+  menuObj.allowMultiSelect(false);
 })();
