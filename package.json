@@ -1,5 +1,5 @@
 {
-  "name": "dropdownmenu",
+  "name": "izidropdown",
   "version": "1.0.0",
   "description": "> This is an example where I use a module that I created to create dropdown menus.",
   "main": "index.js",
@@ -12,7 +12,7 @@
     "start": "webpack-dev-server --mode development --open"
   },
   "keywords": [],
-  "author": "David Eli",
+  "author": "mexadev",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^3.5.3",

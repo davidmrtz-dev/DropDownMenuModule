@@ -1,6 +1,5 @@
 import './scss/style.scss';
 import Menu from './menu';
-
 const menuObj = Menu;
 
 const start = (() => {

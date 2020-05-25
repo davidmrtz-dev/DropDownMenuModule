@@ -1,21 +1,23 @@
-# Drop Down Menu Module.
+# Izidropdown.
 
-> This is an example where I use a module that I created to create dropdown menus.
+> This is  project based on a basic module to easly implement drop-down menus.
 
-![screenshot](./main_readme.png)
+![screenshot](./pres.gif)
+
+## Usage
+
+- Coming soon. :construction_worker:
 
 ## Built With
 
-- JS
-- Module Pattern
 - Webpack
 - ES6
-- CSS
+- SASS
 
 ## Live Demo
 
-[Live Demo Link :rocket:](#)
-
+[Live Demo Link :rocket:](#) 
+- Coming soon. :construction_worker:
 
 ## Authors
 
@@ -37,4 +39,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+ISC.
