@@ -1,3 +1,22 @@
+/* DropDown Dimensions */
+$cutoff: 50;
+/*Custom Themes*/
+/*1*/
+$bg-t1: rgb(57, 127, 157);
+$hb-t1:rgb(95, 169, 196);
+
+/*2*/
+$bg-t2: rgb(57, 77, 157);
+$hb-t2:rgb(95, 119, 196);
+
+/*3*/
+$bg-t3: rgb(57, 157, 142);
+$hb-t3:rgb(95, 196, 186);
+
+/*4*/
+$bg-t4: rgb(157, 125, 57);
+$hb-t4:rgb(196, 156, 95);
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -19,89 +38,173 @@ body {
     align-items: center;
     height: 50px;
     width: 100%;
-    /* Init DropDown API.*/
-    .drop-box-cont {
-      height: 100%;
-      width: auto;
-
-      .opt {
-        position: relative;
-        height: 100%;
-        width: 100%;
-        left: 0;
-        background-color: rgb(57, 127, 157);
-        transition: transform 300ms ease-in-out;
-        border: 0;
-        padding: 0 50px;
-        outline: none;
-        cursor: pointer;
-        h3 {
-          font: small-caps 20px/30px Georgia, serif;
-          padding: 10px 10px;
-        }
-      }
-
-      .default {
-        z-index: 1;
-      }
-
-      .opt:hover {
-        background-color: rgb(95, 169, 196);
-      }
-      .opt-1 {
-        top: -50px;
-        z-index: -1;
-      }
-      .opt-2 {
-        top: -100px;
-        z-index: -1;
-      }
-      .opt-3 {
-        top: -150px;
-        z-index: -1;
-      }
-      .opt-4 {
-        top: -200px;
-        z-index: -1;
-      }
-      .opt-5 {
-        top: -250px;
-        z-index: -1;
-      }
-      .opt-6 {
-        top: -300px;
-        z-index: -1;
-      }
-      .opt-7 {
-        top: -350px;
-        z-index: -1;
-      }
-    }
-    .drop-box-cont.clicked .opt-1 {
-      transform: translate(0, 50px);
-    }
-    .drop-box-cont.clicked .opt-2 {
-      transform: translate(0, 100px);
-    }
-    .drop-box-cont.clicked .opt-3 {
-      transform: translate(0, 150px);
-    }
-    .drop-box-cont.clicked .opt-4 {
-      transform: translate(0, 200px);
-    }
-    .drop-box-cont.clicked .opt-5 {
-      transform: translate(0, 250px);
-    }
-    .drop-box-cont.clicked .opt-6 {
-      transform: translate(0, 300px);
-    }
-    .drop-box-cont.clicked .opt-7 {
-      transform: translate(0, 350px);
-    }
-    /* End DropDown API. */
   }
 }
 
-.hide {
-  display: none;
+/* Init DropDown API.*/
+.drop-box-cont {
+  .opt {
+    transition: transform 300ms ease-in-out;
+  }
+
+  .default {
+    z-index: 1;
+  }
+
+  @for $i from 1 to 10 {
+    .opt-#{$i} {
+      top: $cutoff;
+      $cutoff :  $cutoff - $cutoff;
+      z-index: -1;
+    }
+  }
+
+  /*
+  .opt-1 {
+    top: -50px;
+    z-index: -1;
+  }
+  .opt-2 {
+    top: -100px;
+    z-index: -1;
+  }
+  .opt-3 {
+    top: -150px;
+    z-index: -1;
+  }
+  .opt-4 {
+    top: -200px;
+    z-index: -1;
+  }
+  .opt-5 {
+    top: -250px;
+    z-index: -1;
+  }
+  .opt-6 {
+    top: -300px;
+    z-index: -1;
+  }
+  .opt-7 {
+    top: -350px;
+    z-index: -1;
+  }
+  */
 }
+
+.drop-box-cont.clicked .opt-1 {
+  transform: translate(0, 50px);
+}
+.drop-box-cont.clicked .opt-2 {
+  transform: translate(0, 100px);
+}
+.drop-box-cont.clicked .opt-3 {
+  transform: translate(0, 150px);
+}
+.drop-box-cont.clicked .opt-4 {
+  transform: translate(0, 200px);
+}
+.drop-box-cont.clicked .opt-5 {
+  transform: translate(0, 250px);
+}
+.drop-box-cont.clicked .opt-6 {
+  transform: translate(0, 300px);
+}
+.drop-box-cont.clicked .opt-7 {
+  transform: translate(0, 350px);
+}
+/* End DropDown API. */
+
+
+/* Init Custom Themes */
+.t-1 {
+  height: 100%;
+  width: auto;
+  .opt {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: $bg-t1;
+    border: 0;
+    padding: 0 50px;
+    outline: none;
+    cursor: pointer;
+    h3 {
+      font: small-caps 20px/30px Georgia, serif;
+      padding: 10px 10px;
+    }
+  }
+  .opt:hover {
+    background-color: $hb-t1;
+  }
+}
+
+.t-2 {
+  height: 100%;
+  width: auto;
+  .opt {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: $bg-t2;
+    border: 0;
+    padding: 0 50px;
+    outline: none;
+    cursor: pointer;
+    h3 {
+      font: small-caps 20px/30px Georgia, serif;
+      padding: 10px 10px;
+    }
+  }
+  .opt:hover {
+    background-color: $hb-t2;
+  }
+}
+
+.t-3 {
+  height: 100%;
+  width: auto;
+  .opt {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: $bg-t3;
+    border: 0;
+    padding: 0 50px;
+    outline: none;
+    cursor: pointer;
+    h3 {
+      font: small-caps 20px/30px Georgia, serif;
+      padding: 10px 10px;
+    }
+  }
+  .opt:hover {
+    background-color: $hb-t3;
+  }
+}
+
+.t-4 {
+  height: 100%;
+  width: auto;
+  .opt {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: $bg-t4;
+    border: 0;
+    padding: 0 50px;
+    outline: none;
+    cursor: pointer;
+    h3 {
+      font: small-caps 20px/30px Georgia, serif;
+      padding: 10px 10px;
+    }
+  }
+  .opt:hover {
+    background-color: $hb-t4;
+  }
+}
+/* End Custom Themes */
