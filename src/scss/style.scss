@@ -1,5 +1,27 @@
+@use "sass:string";
 /* DropDown Dimensions */
-$cutoff: 50;
+$base: 0px;
+$dim: 50px;
+$d-1: $base + $dim;
+$nd-1: $d-1 * -1;
+$d-2: $d-1 + $dim;
+$nd-2: $d-2 * -1;
+$d-3: $d-2 + $dim;
+$nd-3: $d-3 * -1;
+$d-4: $d-3 + $dim;
+$nd-4: $d-4 * -1;
+$d-5: $d-4 + $dim;
+$nd-5: $d-5 * -1;
+$d-6: $d-5 + $dim;
+$nd-6: $d-6 * -1;
+$d-7: $d-6 + $dim;
+$nd-7: $d-7 * -1;
+$d-8: $d-7 + $dim;
+$nd-8: $d-8 * -1;
+$d-9: $d-8 + $dim;
+$nd-9: $d-9 * -1;
+$d-10: $d-9 + $dim;
+$nd-10: $d-10 * -1;
 /*Custom Themes*/
 /*1*/
 $bg-t1: rgb(57, 127, 157);
@@ -46,71 +68,81 @@ body {
   .opt {
     transition: transform 300ms ease-in-out;
   }
-
   .default {
     z-index: 1;
   }
+}
 
-  @for $i from 1 to 10 {
-    .opt-#{$i} {
-      top: $cutoff;
-      $cutoff :  $cutoff - $cutoff;
-      z-index: -1;
-    }
-  }
-
-  /*
-  .opt-1 {
-    top: -50px;
-    z-index: -1;
-  }
-  .opt-2 {
-    top: -100px;
-    z-index: -1;
-  }
-  .opt-3 {
-    top: -150px;
-    z-index: -1;
-  }
-  .opt-4 {
-    top: -200px;
-    z-index: -1;
-  }
-  .opt-5 {
-    top: -250px;
-    z-index: -1;
-  }
-  .opt-6 {
-    top: -300px;
-    z-index: -1;
-  }
-  .opt-7 {
-    top: -350px;
-    z-index: -1;
-  }
-  */
+.opt-1 {
+  top: $nd-1;
+  z-index: -1;
+}
+.opt-2 {
+  top: $nd-2;
+  z-index: -1;
+}
+.opt-3 {
+  top: $nd-3;
+  z-index: -1;
+}
+.opt-4 {
+  top: $nd-4;
+  z-index: -1;
+}
+.opt-5 {
+  top: $nd-5;
+  z-index: -1;
+}
+.opt-6 {
+  top: $nd-6;
+  z-index: -1;
+}
+.opt-7 {
+  top: $nd-7;
+  z-index: -1;
+}
+.opt-8 {
+  top: $nd-8;
+  z-index: -1;
+}
+.opt-9 {
+  top: $nd-9;
+  z-index: -1;
+}
+.opt-10 {
+  top: $nd-10;
+  z-index: -1;
 }
 
 .drop-box-cont.clicked .opt-1 {
-  transform: translate(0, 50px);
+  transform: translate(0, $d-1);
 }
 .drop-box-cont.clicked .opt-2 {
-  transform: translate(0, 100px);
+  transform: translate(0, $d-2);
 }
 .drop-box-cont.clicked .opt-3 {
-  transform: translate(0, 150px);
+  transform: translate(0, $d-3);
 }
 .drop-box-cont.clicked .opt-4 {
-  transform: translate(0, 200px);
+  transform: translate(0, $d-4);
 }
 .drop-box-cont.clicked .opt-5 {
-  transform: translate(0, 250px);
+  transform: translate(0, $d-5);
 }
 .drop-box-cont.clicked .opt-6 {
-  transform: translate(0, 300px);
+  transform: translate(0, $d-6);
 }
 .drop-box-cont.clicked .opt-7 {
-  transform: translate(0, 350px);
+  transform: translate(0, $d-7);
+}
+.drop-box-cont.clicked .opt-8 {
+  transform: translate(0, $d-8);
+}
+.drop-box-cont.clicked .opt-9 {
+  transform: translate(0, $d-9);
+}
+.drop-box-cont.clicked .opt-10 {
+  transform: translate(0, $d-10);
 }
 /* End DropDown API. */
 
