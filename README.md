@@ -1,10 +1,10 @@
-# Izidropdown.
+# Izidropdown
 
 > This is  an open source project based on a module to easly implement customizable drop-down menus.
 
 ![screenshot](./ok.gif)
 
-## Installation.
+## Installation
 
 First you will need to install this module.
 
@@ -39,6 +39,34 @@ module.exports = {
   },
 };
 ```
+
+## Getting Started
+
+Import the sass file that comes within the module into your index.js file, this file add animations requiered for the dropdown menus also add some customs styles.
+Depending on where you index.js file is located, you have to specify the path of the scss module file.
+In this case we assume that the index.js file is inside the src folder.
+
+`import '../node_modules/izidropdown/scss/style.scss';`
+
+Next you have to import the Menu object from the module.
+
+'import Menu from 'izidropdown';'
+
+## Usage
+
+### JS
+
+Next you have to define an instance of the object.
+
+`const menuObj = Menu;`
+
+This module was created keeping in mind the simplicity, so to get this work you only need one line of code.
+
+`menuObj.scanForMenu();`
+
+### HTML
+
+This module works with the use of classes like popular frameworks as bootstrap.
 
 ## Built With
 
