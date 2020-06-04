@@ -40,9 +40,9 @@ module.exports = {
 };
 ```
 
-## Getting Started
+## Getting Started :dart:
 
-Import the sass file that comes within the module into your index.js file, this file add animations requiered for the dropdown menus also add some customs styles.
+Import the scss file that comes within the module into your index.js file, this file add animations requiered for the dropdown menus also add some customs styles.
 Depending on where you index.js file is located, you have to specify the path of the scss module file.
 In this case we assume that the index.js file is inside the src folder.
 
@@ -64,9 +64,60 @@ This module was created keeping in mind the simplicity, so to get this work you 
 
 `menuObj.scanForMenu();`
 
+By default the multiselection is enabled when the instance is defined.
+To change this you could type this.
+
+menuObj.allowMultiSelect(false);
+
+It's done, that is all the JavaScript we have to implement to get this menu working.
+
 ### HTML
 
-This module works with the use of classes like popular frameworks as bootstrap.
+This module works making use of classes like popular frameworks like bootstrap, also make use of z-index property.
+In order to implement the desplegable menu you have to define a container for the menu and inside this container you need to implement another boxes for each option.
+The menu has a maximum of 10 options.
+
+```
+<div class="drop-box-cont">
+  <div class="opt default">
+    <h3>Products</h3>
+  </div>
+  <div class="opt  opt-1">
+    <h3>Option 1</h3>
+  </div>
+  <div class="opt  opt-2">
+    <h3>Option 2</h3>
+  </div>
+  <div class="opt  opt-3">
+    <h3>Option 3</h3>
+  </div>
+  <div class="opt  opt-4">
+    <h3>Option 4</h3>
+  </div>
+</div>
+```
+
+### Style
+
+You can add the pre-defined styling that comes with the module, to do that you just have to add the class 't-x' to the menu container, there 4 themes that you can use.
+
+```
+<div class="drop-box-cont t-1">
+  ...options
+</div>
+<div class="drop-box-cont t-2">
+  ...options
+</div>
+<div class="drop-box-cont t-x">
+  ...options
+</div>
+```
+
+## Future Implementations :fast_forward:
+
+- Add multiple animation options.
+- Implement more predefined themes.
+- Add the classes that defines the animations directly from the JS without the need to import a scss or css file.
 
 ## Built With
 
@@ -76,8 +127,10 @@ This module works with the use of classes like popular frameworks as bootstrap.
 
 ## Live Demo
 
-[Live Demo Link :rocket:](#) 
-- Coming soon. :construction_worker:
+[Live Demo Link :rocket:](https://rawcdn.githack.com/davitomix/DropDownMenuModule/d5b84839acfe7d0befaa79031a8bcdd5cc3652e9/example/dist/index.html) also there's an example inside the example/dist folder, just drop the index.html into your web browser, you can also check the implementation in the example/src/index.js diretory.
+
+## Automated Tests :space_invader:
+There are no automated tests for this project, they will eventually be added.
 
 ## Authors
 
