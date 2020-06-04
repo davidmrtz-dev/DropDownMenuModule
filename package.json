@@ -1,6 +1,6 @@
 {
   "name": "izidropdown",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "> This is an example where I use a module that I created to create dropdown menus.",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,16 @@
     "prod": "webpack --mode production",
     "start": "webpack-dev-server --mode development --open"
   },
-  "keywords": ["drop-down", "menu", "drop", "down", "menu", "desplegable", "dropdown", "dropdownmenu"],
+  "keywords": [
+    "drop-down",
+    "menu",
+    "drop",
+    "down",
+    "menu",
+    "desplegable",
+    "dropdown",
+    "dropdownmenu"
+  ],
   "author": "mexadev",
   "license": "ISC",
   "devDependencies": {
