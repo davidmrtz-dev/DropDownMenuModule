@@ -1,4 +1,5 @@
 .gitattributes export-ignore
 .gitignore export-ignore
+.DS_Store export-ignore
 ok.gif export-ignore
 webpack.config.js export-ignore
