@@ -11,7 +11,7 @@
     "prod": "webpack --mode production",
     "start": "webpack-dev-server --mode development --open"
   },
-  "keywords": [],
+  "keywords": ["drop-down", "menu", "drop", "down", "menu", "desplegable", "dropdown", "dropdownmenu"],
   "author": "mexadev",
   "license": "ISC",
   "devDependencies": {
