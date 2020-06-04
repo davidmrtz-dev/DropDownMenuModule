@@ -1,7 +1,5 @@
 node_modules/
 .DS_Store/
 *.DS_Store
-example/
-*webpack.config.js
-ok.gif
-.gitignore
+webpack.config.js
+*.gif
