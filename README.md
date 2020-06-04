@@ -42,7 +42,7 @@ module.exports = {
 
 ## Getting Started :dart:
 
-Import the scss file that comes within the module into your index.js file, this file add animations requiered for the dropdown menus also add some customs styles.
+Import the scss file that comes within the module into your index.js file, this file add animations requiered for the dropdown menus also add some pre-defined styles.
 Depending on where you index.js file is located, you have to specify the path of the scss module file.
 In this case we assume that the index.js file is inside the src folder.
 
@@ -56,25 +56,25 @@ Next you have to import the Menu object from the module.
 
 ### JS
 
-Next you have to define an instance of the object.
+You will have to define an instance of the object.
 
 `const menuObj = Menu;`
 
-This module was created keeping in mind the simplicity, so to get this work you only need one line of code.
+This module was created with simplicity in mind, so you only need one line of code to get this working.
 
 `menuObj.scanForMenu();`
 
-By default the multiselection is enabled when the instance is defined.
+By default, the multiselection is enabled when the instance is defined.
 To change this you could type this.
 
-menuObj.allowMultiSelect(false);
+`menuObj.allowMultiSelect(false);`
 
 It's done, that is all the JavaScript we have to implement to get this menu working.
 
 ### HTML
 
-This module works making use of classes like popular frameworks like bootstrap, also make use of z-index property.
-In order to implement the desplegable menu you have to define a container for the menu and inside this container you need to implement another boxes for each option.
+This module works making use of classes like popular frameworks like bootstrap, also makes use of z-index property.
+In order to implement the desplegable menu you have to define a container for the menu and inside this container you need to implement another containers for each option.
 The menu has a maximum of 10 options.
 
 ```
@@ -91,7 +91,7 @@ The menu has a maximum of 10 options.
   <div class="opt  opt-3">
     <h3>Option 3</h3>
   </div>
-  <div class="opt  opt-4">
+  <div class="opt  opt-x">
     <h3>Option 4</h3>
   </div>
 </div>
@@ -117,7 +117,7 @@ You can add the pre-defined styling that comes with the module, to do that you j
 
 - Add multiple animation options.
 - Implement more predefined themes.
-- Add the classes that defines the animations directly from the JS without the need to import a scss or css file.
+- Add the classes that define the animations directly from the JS without the need to import a scss or css file.
 
 ## Built With
 
