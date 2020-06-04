@@ -1,5 +1,5 @@
-import './scss/style.scss';
-import Menu from './index';
+import '../../scss/style.scss';
+import Menu from '../../index';
 const menuObj = Menu;
 
 const start = (() => {
