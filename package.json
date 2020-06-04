@@ -1,6 +1,6 @@
 {
   "name": "izidropdown",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "> This is an example where I use a module that I created to create dropdown menus.",
   "main": "index.js",
   "scripts": {
