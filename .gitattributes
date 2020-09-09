@@ -3,4 +3,3 @@
 .DS_Store export-ignore
 ok.gif export-ignore
 webpack.config.js export-ignore
-*.scss linguist-detectable=false
