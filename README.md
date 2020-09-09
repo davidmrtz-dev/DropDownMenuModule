@@ -138,7 +138,7 @@ There are no automated tests for this project, they will eventually be added.
 
 - Github: [@davitomix](https://github.com/davitomix)
 - Twitter: [@davitomix007](https://twitter.com/davitomix007)
-- Linkedin: [David Garcia](https://www.linkedin.com/in/davideligarcia/)
+- LinkedIn: [David Garcia](https://www.linkedin.com/in/davideligarcia/)
 
 ## 🤝 Contributing
 
