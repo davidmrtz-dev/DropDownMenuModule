@@ -134,11 +134,10 @@ There are no automated tests for this project, they will eventually be added.
 
 ## Authors
 
-👤 **David Elí**
+👤 **David Martínez**
 
-- Github: [@davitomix](https://github.com/davitomix)
-- Twitter: [@davitomix007](https://twitter.com/davitomix007)
-- LinkedIn: [David Garcia](https://www.linkedin.com/in/davideligarcia/)
+- Github: [@davomartine-dev](https://github.com/davomartinez-dev)
+- LinkedIn: [David Martínez](https://www.linkedin.com/in/davidelimartinez/)
 
 ## 🤝 Contributing
 
