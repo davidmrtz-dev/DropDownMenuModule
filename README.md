@@ -1,4 +1,4 @@
-# Iidropdown
+# Izidropdown
 
 > This is  an open source project based on a module to easly implement customizable drop-down menus.
 
